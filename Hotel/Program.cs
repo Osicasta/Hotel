@@ -1,85 +1,118 @@
 ﻿using System;
 
-namespace Hotel // Note: actual namespace depends on the project name.
+namespace Hotel
 {
+    class Hotel
+    {
+        // Atributos
+        private string nombre;
+        private string direccion;
+        private int categoria;
 
-    class Hotel {
-
-        //Atributos
-        private String nombre;
-        private String Direccion;
-        private int Categoria;
-
-        //Metodos
-        public string Habitaciones_disponibles() { };
-
+        // Métodos
+        public string HabitacionesDisponibles()
+        {
+            // Implementación
+            return "";
+        }
     }
 
+    class Habitacion
+    {
+        // Atributos
+        private int id;
+        private string tipoHabitacion;
+        private int numeroCamas;
+        private int numeroBannos;
+        private int precioNoche;
+        private bool disponible;
 
-    class Habitacion {
+        // Métodos
+        public string VerificarDisponibilidad()
+        {
+            // Implementación
+            return "";
+        }
 
-        //Atributos
-        private int ID;
-        private String Tipo_habitacion;
-        private int Numero_camas;
-        private int Numero_bannos;
-        private int Precio_noche;
-        private Boolean Disponible;
+        public bool ReservarHabitacion()
+        {
+            // Implementación
+            return false;
+        }
 
-
-        //Metodos
-        public string Verificar_disponibilidad() { }
-
-        public Boolean Reservar_habitacion() { }
-
-        public Boolean Librar_habitacion() { }
-
-
-
+        public bool LiberarHabitacion()
+        {
+            // Implementación
+            return false;
+        }
     }
 
-    class Recepcionista {
+    class Recepcionista
+    {
+        // Atributos
+        private string nombre;
+        private string apellido;
 
-        //Atributos
-        private String Nombre;
-        private String Apellido;
+        // Métodos
+        public bool HacerCheckIn()
+        {
+            // Implementación
+            return false;
+        }
 
-        //Metodos
-        public Boolean Hacer_checkIn() { }
-        public Boolean Hacer_checkOut() { }
-
-
+        public bool HacerCheckOut()
+        {
+            // Implementación
+            return false;
+        }
     }
 
+    class Cliente
+    {
+        // Atributos
+        private string nombre;
+        private int contacto;
 
-    class Cliente{
+        // Métodos
+        public bool HacerReserva()
+        {
+            // Implementación
+            return false;
+        }
 
-        //Atributos
-        private String Nombre;
-        private int Contacto;
-
-        //Metodos
-        public Boolean Hacer_reserva() { }
-        public Boolean Cancelar_reserva() { }
-
-
+        public bool CancelarReserva()
+        {
+            // Implementación
+            return false;
+        }
     }
 
-    class Sistema{
+    class Sistema
+    {
+        // Atributos
+        private Cliente cliente;
+        private Habitacion habitacion;
+        private bool estadoReserva;
 
-        //Atributos
-        private Cliente = new Cliente();
-        private Habitacion = new Habitacion();
-        private Boolean Estado_reserva;
+        // Métodos
+        public int CalcularCosto()
+        {
+            // Implementación
+            return 0;
+        }
 
-        //Metodos
-        public int Calcular_costo() { }
-        public Boolean Confirmar_reserva() { }
-        public Boolean Cancelar_reserva() { }
-    }   
+        public bool ConfirmarReserva()
+        {
+            // Implementación
+            return false;
+        }
 
-
-
+        public bool CancelarReserva()
+        {
+            // Implementación
+            return false;
+        }
+    }
 
     internal class Program
     {
