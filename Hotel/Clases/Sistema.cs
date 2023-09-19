@@ -8,6 +8,7 @@ namespace Hotel.Clases
 {
     public class Sistema
     {
+        
         //Atributos
         private Cliente cliente =  new Cliente();
         private Habitacion habitacion = new Habitacion();

@@ -16,9 +16,11 @@ namespace Hotel.Clases
        private int Precio_noche;
        private Boolean Disponible;
 
+      
 
-       //Metodos
-       public string Verificar_disponibilidad() 
+
+        //Metodos
+        public string Verificar_disponibilidad() 
         {
             return "";
         }

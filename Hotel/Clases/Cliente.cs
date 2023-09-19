@@ -13,8 +13,10 @@ namespace Hotel.Clases
         private String Nombre;
         private int Contacto;
 
+       
+
         //Metodos
-        public Boolean Hacer_reserva() 
+        public Boolean Hacer_reserva(String Nombre, int Contacto) 
         {
             return true;
         }
